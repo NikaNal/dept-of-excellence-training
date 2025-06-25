@@ -1,8 +1,8 @@
 // Configuration - Replace with your published Google Sheets URLs
 const CONFIG = {
-    schoolsSheet: 'https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/gviz/tq?tqx=out:csv&sheet=Schools',
-    rpSheet: 'https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/gviz/tq?tqx=out:csv&sheet=ResourcePersons',
-    topicsSheet: 'https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/gviz/tq?tqx=out:csv&sheet=Topics'
+    schoolsSheet: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR3kIrCkdjXU_XDesNznSNYikt3HnQT75aXwfGmFGEzCDzq2WzYh5SF0rmnH3QyLXpCraf-Wodiq6It/pub?gid=1690303579&single=true&output=csv',
+    rpSheet: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR3kIrCkdjXU_XDesNznSNYikt3HnQT75aXwfGmFGEzCDzq2WzYh5SF0rmnH3QyLXpCraf-Wodiq6It/pub?gid=0&single=true&output=csv',
+    topicsSheet: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR3kIrCkdjXU_XDesNznSNYikt3HnQT75aXwfGmFGEzCDzq2WzYh5SF0rmnH3QyLXpCraf-Wodiq6It/pub?gid=858133414&single=true&output=csv'
 };
 
 // Global variables
