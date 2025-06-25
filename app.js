@@ -311,3 +311,11 @@ function resetForm() {
     document.getElementById('confirmation').style.display = 'none';
     selectedSchool = null;
 }
+async function loadData() {
+    try {
+        const schoolsResponse = await fetchCsv(CONFIG.schoolsSheet);
+        schools = parseSchoolsData(schoolsResponse);
+        console.log('Loaded schools:', schools); // 👈 Add this line
+        // ...
+    }
+}
