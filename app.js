@@ -160,7 +160,7 @@ function populateTopicsDropdown() {
 
 // Lookup school by code
 function lookupSchool(code) {
-    selectedSchool = schools.find(school => school.SCH_CODE === code);
+    selectedSchool = schools.find(school =>      school.SCH_CODE.trim().toLowerCase() === code.trim().toLowerCase() );
     
     if (selectedSchool) {
         document.getElementById('schoolName').textContent = selectedSchool.SCHOOL_NAME;
