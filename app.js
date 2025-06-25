@@ -49,6 +49,7 @@ async function loadData() {
         // Load schools
         const schoolsResponse = await fetchCsv(CONFIG.schoolsSheet);
         schools = parseSchoolsData(schoolsResponse);
+        console.log('Loaded schools:', schools);
         
         // Load resource persons
         const rpResponse = await fetchCsv(CONFIG.rpSheet);
@@ -310,12 +311,4 @@ function resetForm() {
     document.getElementById('schoolDetails').style.display = 'none';
     document.getElementById('confirmation').style.display = 'none';
     selectedSchool = null;
-}
-async function loadData() {
-    try {
-        const schoolsResponse = await fetchCsv(CONFIG.schoolsSheet);
-        schools = parseSchoolsData(schoolsResponse);
-        console.log('Loaded schools:', schools); // 👈 Add this line
-        // ...
-    }
 }
